@@ -64,6 +64,12 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "integration_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::integration-category.integration-category",
+      "inversedBy": "integrations"
     }
   }
 }

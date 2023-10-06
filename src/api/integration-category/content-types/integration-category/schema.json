@@ -4,7 +4,8 @@
   "info": {
     "singularName": "integration-category",
     "pluralName": "integration-categories",
-    "displayName": "Integration Category"
+    "displayName": "Integration Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,7 +22,7 @@
     "integrations": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::category.category",
+      "target": "api::integration.integration",
       "mappedBy": "integration_category"
     }
   }
