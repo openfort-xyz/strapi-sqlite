@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "integration_categories",
+  "info": {
+    "singularName": "integration-category",
+    "pluralName": "integration-categories",
+    "displayName": "Integration Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "integrations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "integration_category"
+    }
+  }
+}
