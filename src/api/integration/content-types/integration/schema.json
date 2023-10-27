@@ -70,6 +70,9 @@
       "relation": "manyToOne",
       "target": "api::integration-category.integration-category",
       "inversedBy": "integrations"
+    },
+    "live_demo": {
+      "type": "string"
     }
   }
 }
